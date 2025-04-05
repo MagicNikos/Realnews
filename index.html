@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real news.com</title>
+    <style>
+    * {
+    margin: 1;
+    padding: 1;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif, sans-serif;
+}
+
+body {
+    color: #000000;
+    line-height: 2;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+    border-bottom: 1px solid #eee;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+nav ul li:last-child a {
+    color: #ff0000;
+}
+
+main {
+    padding: 40px 5%;
+}
+
+.articles {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-bottom: 60px;
+}
+
+.article-card {
+    border: 1px solid #eee;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.article-card h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.article-card p {
+    margin-bottom: 20px;
+    color: #666;
+}
+
+.article-card a {
+    color: #0066cc;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.faq {
+    margin-bottom: 60px;
+}
+
+.faq h2 {
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+.faq p.intro {
+    margin-bottom: 30px;
+    max-width: 800px;
+    color: #666;
+}
+
+.accordion {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.accordion-item {
+    margin-bottom: 10px;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.accordion-header {
+    padding: 15px 20px;
+    background: #f9f9f9;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background 0.3s;
+}
+
+.accordion-header:hover {
+    background: #f0f0f0;
+}
+
+.accordion-header h3 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.accordion-header .icon {
+    font-size: 20px;
+    transition: transform 0.3s;
+}
+
+.accordion-content {
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out, padding 0.3s ease;
+    background: white;
+}
+
+.accordion-content p {
+    padding: 15px 0;
+    color: #666;
+}
+
+.accordion-item.active .accordion-header {
+    background: #f0f0f0;
+}
+
+.accordion-item.active .accordion-header .icon {
+    transform: rotate(45deg);
+}
+
+.accordion-item.active .accordion-content {
+    max-height: 300px;
+    padding: 0 20px 15px;
+}
+
+
+footer {
+    background: #f5f5f5;
+    padding: 30px 5%;
+    text-align: center;
+}
+
+.footer-nav {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.footer-nav ul {
+    display: flex;
+    list-style: none;
+}
+
+.footer-nav ul li {
+    margin: 0 15px;
+}
+
+.footer-nav ul li a {
+    text-decoration: none;
+    color: #666;
+}
+
+.copyright {
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.links a {
+    color: #666;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">Realnews.com</div>
+        <nav>
+            <ul>
+                <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Link one</a></li>
+                <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Link two</a></li>
+                <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Link three</a></li>
+                <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Link four</a></li>
+                <li><a href="https://www.youtube.com/watch?v=lb13ynu3Iac">Delete</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="articles">
+            <article class="article-card">
+                <h2>MASSIVE news on ninja's haircut preferences</h2>
+                <img src="low.jpg" height="400" width="400" >
+                <p>International Barber Organasation (IBO) shocked on Richard's Tyler Blevins endorsement of the low taper fade meme. 
+                    Ninja claims that said meme is so massive it could theoretically cause the 2nd Renaissance of Western society. Experts belive that the meme will get that massive that the whole internet will
+                be on crackdown due to all the people creating multiple low taper fade edits that atract BILLIONS of likes and views. It's believed that dragging the low taper fade meme to 2026 is 
+            the duty of every one who has access to any sort of media.</p>
+                <a href="https://www.youtube.com/watch?v=ATMCxOhQRjw">Read more</a>
+            </article>
+            
+            <article class="article-card">
+                <h2>The real cause of Jhon pork's disappear</h2>
+                <img src="jhon.jpg" height="400" width="400" >
+                <p>Jhon was last seen in las vegas, playing slots and shouting "gold gold gold" when a group of black suited men approached him and took him out of the establisment. A bypassing witness informed that she heard gunshot at 10:35 pm near the colorado river area 
+                    . Mister Pork's phone was found in a pond nearby and a body that seemed to be Jhon prok himself but was deemed fake by experts. Leading theories suggest that
+                he used so much phone data calling everyone that telecommunication companies wanted him dead. May he rest in peace.</p>
+                <a href="https://www.youtube.com/watch?v=DTUk82TV1T4">Read more</a>
+            </article>
+            
+            <article class="article-card">
+                <h2>Michael from Gta5 finally gets his boat back after 12 years  </h2>
+                <img src="michael.jpg" height="400" width="400" >
+                <p>Michael's boat was stolen when his son Jimmy tried to sell it and ended up getting it stolen. Michael and Franklin risked their lives to chase the boat to rescue Jimmy and try to retrieve
+                    it. Thankfully they ended up saving Jimmy from the thieves, but any attemps to retrieve the boat were in vain. Michael really loved his boat and was really sad abt said development. It is said that 
+                    he ended up wasting all the money he stole from the "big one" heist to track down the theives and to finally get his beloved boat back
+                </p>
+                <a href="https://www.youtube.com/watch?v=bLZo0e8hlfI">Read more</a>
+            </article>
+        </section>
+        
+        <section class="faq">
+            <h2>FAQ about Realnews.com</h2>
+            <p class="intro">We are a news outlet that covers the most dire of topics </p>
+            
+            <div class="accordion">
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <h3>How does Realnews get its sources?</h3>
+                        <span class="icon">+</span>
+                    </div>
+                    <div class="accordion-content">
+                        <p>With the help of our world wide partners we are able to get coverage of international events in real time.</p>
+                    </div>
+                </div>
+                
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <h3>Is Realnews a satire page? </h3>
+                        <span class="icon">+</span>
+                    </div>
+                    <div class="accordion-content">
+                        <p>We are cosnidered one of the most prestige and trust worthy news sources in the web, even being award the medal of most sigma organasation of the 2025.</p>
+                    </div>
+                </div>
+                
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <h3>Why is Realnews so amazing?</h3>
+                        <span class="icon">+</span>
+                    </div>
+                    <div class="accordion-content">
+                        <p>To put it simply, we understand the people's needs and we provide exactly what they want.</p>
+                    </div>
+                </div>
+                
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <h3>How can I help out Realnew's cause?</h3>
+                        <span class="icon">+</span>
+                    </div>
+                    <div class="accordion-content">
+                        <p>We are open to any form of help from volunteers, that allow us to achieve our new's coverage. The back side of your credit/debit card would also suffice.</p>
+                    </div>
+                </div>
+                
+                
+                
+            </div>
+            
+            <p style="margin-top: 30px; color: #666;">
+            
+            </p>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="footer-nav">
+            <ul>
+                <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Real news</a></li>
+                <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Link one</a></li>
+                <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Link two</a></li>
+                <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Link three</a></li>
+                <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Link four</a></li>
+            </ul>
+        </div>
+        
+        <div class="links">© 2025 Realnews. All rights reserved.</div>
+        
+        <div class="links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+        </div>
+    </footer>
+    
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const accordionItems = document.querySelectorAll('.accordion-item');
+        
+        accordionItems.forEach(item => {
+            const header = item.querySelector('.accordion-header');
+            
+            header.addEventListener('click', () => {
+                
+                accordionItems.forEach(otherItem => {
+                    if (otherItem !== item && otherItem.classList.contains('active')) {
+                        otherItem.classList.remove('active');
+                    }
+                });
+                
+                
+                item.classList.toggle('active');
+            });
+        });
+        
+        
+    });</script>
+    <link rel="stylesheet" href="style.css">
+</body>
+</html>
